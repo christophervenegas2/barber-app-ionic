@@ -15,4 +15,9 @@ export class AppComponent {
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}
+
+  goToScreen() {
+    console.log("Aqui estoy xddd");
+
+  }
 }
