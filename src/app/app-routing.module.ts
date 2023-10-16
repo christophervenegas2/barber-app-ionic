@@ -4,12 +4,20 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'folder/navigation',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    path: 'folder/navigation',
+    loadChildren: () => import('./screens/profile/profile.module').then( m => m.ProfileModule)
+  },
+  {
+    path: 'folder/profile',
+    loadChildren: () => import('./screens/profile/profile.module').then( m => m.ProfileModule)
+  },
+  {
+    path: 'folder/favorites',
+    loadChildren: () => import('./screens/favorites/favorites.module').then( m => m.FavoritesModule)
   }
 ];
 

@@ -1,17 +1,17 @@
 <ion-app>
   <ion-tabs>
     <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="home">
-        <ion-icon name="play-circle"></ion-icon>
-        Listen Now
+      <ion-tab-button tab="folder/favorites">
+        <ion-icon name="star"></ion-icon>
+        <ion-label>Favoritos</ion-label>
       </ion-tab-button>
-      <ion-tab-button tab="navigation" (click)="goToScreen()">
-        <ion-icon name="camera"></ion-icon>
-        <ion-label>Photo</ion-label>
+      <ion-tab-button tab="folder/navigation" (click)="goToScreen()">
+        <ion-icon name="navigate"></ion-icon>
+        <ion-label>Navegar</ion-label>
       </ion-tab-button>
-      <ion-tab-button tab="profile">
-        <ion-icon name="profile"></ion-icon>
-        Profile
+      <ion-tab-button tab="folder/profile">
+        <ion-icon name="person"></ion-icon>
+        <ion-label>Perfil</ion-label>
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>
