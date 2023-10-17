@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: 'folder/navigation',
-    loadChildren: () => import('./screens/profile/profile.module').then( m => m.ProfileModule)
+    loadChildren: () => import('./screens/navigation/navigation.module').then( m => m.NavigationModule)
   },
   {
     path: 'folder/profile',

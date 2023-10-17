@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  .container-profile {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    height: 15vh;
+    .container-avatar {
+      display: flex;
+      flex-direction: column;
+      width: 30vw;
+      height: auto;
+    }
+    .container-info {
+      display: flex;
+      flex-direction: row;
+      width: 70vw;
+      .info {
+        display: flex;
+        flex-direction: column;
+        height: 5vh;
+        justify-content: space-between;
+        padding: 0px 20px 0px 0px;
+        h5 {
+          font-size: 15px;
+          margin: 0px;
+          padding: 0px;
+        }
+      }
+    }
+  }
+  .container-photos {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: normal;
+    align-content: normal;
+    height: 60vh;
+    flex-basis: 30%;
+    margin: 0px 5px;
+    .photo {
+      display: flex;
+      background-color: #808080;
+      flex: 0 1 30%;
+      width: 100px;
+      height: 100px;
+      margin: 6px;
+      justify-content: center;
+      align-items: center;
+      .pics {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+
+::ng-deep .container-avatar ion-img {
+  width: 100px;
+  height: 100px;
+}
+
+::ng-deep .container-avatar ion-img::part(image) {
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px 1px transparent;
+}

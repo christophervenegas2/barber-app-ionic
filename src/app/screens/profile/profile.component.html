@@ -1,3 +1,26 @@
-<p>
-  profile works!
-</p>
+<div class="container">
+  <div class="container-profile">
+    <div class="container-avatar">
+      <ion-img class="avatar" [src]="photo[0]"></ion-img>
+    </div>
+    <div class="container-info">
+      <div class="info">
+        <h5>Publicaciones</h5>
+        <h5>10</h5>
+      </div>
+      <div class="info">
+        <h5>Seguidores</h5>
+        <h5>10.000</h5>
+      </div>
+      <div class="info">
+        <h5>Seguidos</h5>
+        <h5>100</h5>
+      </div>
+    </div>
+  </div>
+  <div class="container-photos">
+    <div class="photo" *ngFor="let item of photo">
+      <ion-img class="pics" [src]="item"></ion-img>
+    </div>
+  </div>
+</div>
